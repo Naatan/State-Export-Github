@@ -1,4 +1,4 @@
-project: https://platform.activestate.com/nathanr/Python3
+project: https://platform.activestate.com/nathanr/Python3?commitID=623dadf8-ebf9-4876-bfde-f45afafe5ea8
 constants:
   - name: PLACE
     value: WORLD
