@@ -1,0 +1,21 @@
+project: https://platform.activestate.com/nathanr/Python3
+constants:
+  - name: PLACE
+    value: WORLD
+jobs:
+  - name: build
+    constants:
+      - PLACE
+    scripts:
+      - assert
+      - hello
+scripts:
+  - name: assert
+    language: bash
+    value: |
+      echo $PATH
+      which state
+      which python3
+  - name: hello
+    language: bash
+    value: echo Hello $PLACE

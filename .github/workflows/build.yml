@@ -1,0 +1,22 @@
+name: State Tool Generated Workflow
+"on":
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+jobs:
+  build:
+    name: build
+    env:
+      PLACE: WORLD
+    runs-on: ubuntu-latest
+    steps:
+    - name: assert
+      run: state run assert
+      shell: bash
+    - name: hello
+      run: state run hello
+      shell: bash
+
